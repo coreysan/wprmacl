@@ -1,0 +1,16 @@
+
+.services-box .heading h3 { margin-top: expression(this.parentNode.offsetHeight > this.offsetHeight ? ((this.parentNode.offsetHeight-this.offsetHeight)/2 + "px") : "0"); }
+
+.bizwrapper{
+	width: 100%;
+	/*border: 1px solid black;*/
+}
+.businesslist li{
+	display: inline !important;
+	float: left;
+	clear: none;
+}
+.businesslist li a{
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	background: #59ab45;
+}

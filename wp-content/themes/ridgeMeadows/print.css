@@ -1,0 +1,114 @@
+#printLogo {
+  display: block;
+  float: left;
+  width: 286px;
+  height: 104px;
+  margin-bottom: 40px;
+}
+h1.logo {
+  display: none;
+}
+#nav,
+.menu-main-container,
+ul#menu-main,
+.aside,
+.aside h3,
+.aside-gen h3,
+.aside-gen h3 span,
+.general-block,
+.services-box .heading,
+.heading-fp,
+.services-fp,
+.services-box .heading h3,
+.heading-fp h3,
+.services-fp h3,
+.recruiting-fp h3,
+.business-block,
+.business-block ul,
+.general-block ul,
+#sidebar .link-box span,
+#sidebar .link-box,
+.aside .link-box,
+.aside .link-box span,
+.businesslist li,
+.businesslist li a,
+.toprow a.button,
+.newsbuttons,
+.post-fp,
+#slider,
+#banner img,
+#content img,
+.newswrapper img,
+.googleMap {
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.menu-main-container ul li,
+.menu-main-container ul li a {
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.menu-main-container ul li {
+  background: #ddd !important;
+}
+h1,
+.smallrow .businesses-fp h1 span,
+h2,
+h3,
+h4,
+h5,
+h6,
+.holder a {
+  color: #bbb !important;
+  background: none;
+  border: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6,
+#content .holder a {
+  color: #bbb !important;
+  background: none;
+  border: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+.columns .post .title h2 a,
+.columns .event .title h2 a,
+.meta {
+  color: #bbb !important;
+  background: none;
+  border: none !important;
+}
+input[type=submit] {
+  border: 1px solid #bbb !important;
+  box-shadow: none !important;
+}
+a,
+#breadcrumbs a {
+  color: #000;
+  text-decoration: underline;
+}
