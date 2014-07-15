@@ -60,7 +60,11 @@
 				<!--Top Links-->
 				<?php wp_nav_menu(array('theme_location'=>'primary', 'menu_class' => 'top-links', 'menu'=>'top', 'link_before'=>'', 'link_after'=>'', 'depth'=>1)); ?>
 			
-				<span class="slogan">building futures, changing lives</span>
+				<div id="kmuniti_home_btn_holder">
+		      		<?php echo getKmunitiButton();?>
+		      	</div>
+			
+				<div class="slogan">building futures, changing lives</div>
 			</div>
 			<!--Nav-->
 			<nav id="nav">

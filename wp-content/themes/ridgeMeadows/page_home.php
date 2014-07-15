@@ -58,7 +58,11 @@ Javascript must be enabled for the correct page display
     <div class="header-right"> 
       <!--Top Links-->
       <?php wp_nav_menu(array('theme_location'=>'primary', 'menu_class' => 'top-links', 'menu'=>'top', 'link_before'=>'', 'link_after'=>'', 'depth'=>1)); ?>
-      <span class="slogan">building futures, changing lives</span> </div>
+      <div id="kmuniti_home_btn_holder">
+      	<?php echo getKmunitiButton();?>
+      </div>
+      <div class="slogan">building futures, changing lives</div> 
+      </div><!-- header-right -->
     <!--Nav-->
     <nav id="nav"> 
       <?php wp_nav_menu(array('theme_location'=>'primary', 'menu_class' => '', 'menu'=>'main', 'link_before'=>'', 'link_after'=>'', 'depth'=>1)); ?>
@@ -145,10 +149,13 @@ while (have_posts()) : the_post();?>
   <div class="grid_4 smallrow rightside">
     <div class="recruiting-fp">
       <h3><a style="font-size: inherit;"
-			href="http://rmacl.org/news-events/spring-into-summer-join-us-for-a-three-day-art-extravaganza-june-12-to-14th/">
-			Vicuna's 3-day art extravaganza<br>
+			href="http://rmacl.org/contact-us/ways-to-donate/kmuniti-market/">
+			Shop at the<br>
+			<b>Kmuniti Market</b><br>
+			to support RMACL
+			<!-- Vicuna's 3-day art extravagonza<br>
 			<b>Spring into Summer</b><br>
-			Thursday-Saturday<br> June 12<sup>th</sup> - 14<sup>th</sup>
+			Thursday-Saturday<br> June 12<sup>th</sup> - 14<sup>th</sup> -->
 		</a></h3></div>
   </div>
 </div>

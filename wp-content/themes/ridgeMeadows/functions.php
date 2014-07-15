@@ -615,6 +615,53 @@ function special_nav_class($classes, $item){
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 
 
+/* Expects text for display next to the button and a URL to direct to
+ * 
+ */
+function addButtonWithText( $atts ){
+	
+	$atts = shortcode_atts( array(
+		'class' => 'kmnuniti_btn_home',
+        'text' => 'support RMACL by<br>shopping online',
+        'url' => 'http://rmacl.org/contact-us/ways-to-donate/kmuniti-market/'
+    ), $atts );
+
+    return getKmunitiButton($atts);
+}
+add_shortcode('rmacl_kmuniti_btn', 'addButtonWithText');
+
+
+/*
+ * Expect an array with attributes for text, id, url
+ */
+function getKmunitiButton($atts=null){
+	
+	if(empty($atts['class'])) $atts['class'] = 'kmnuniti_btn_home';
+	if(empty($atts['url'])) $atts['url'] = 'http://rmacl.org/contact-us/ways-to-donate/kmuniti-market/';
+	if(empty($atts['text'])) $atts['text'] = 'shop online &<br>support RMACL';
+	
+	ob_start();
+    ?>
+    
+    <style>
+
+    
+    </style>
+    
+    <a 	id="rmacl_kmuniti_btn"
+    	class="<?php echo $atts['class']; ?>"
+    	href="<?php echo $atts['url'];?>">
+    	
+    	<?php echo $atts['text'];?>
+    	
+    </a>
+    
+    <?php //"foo = {$atts['foo']}";
+    return ob_get_clean();
+	
+}
+
+
 function exclude_category( $query ) {
     if ( $query->is_home() && $query->is_main_query() ) {
         $query->set( 'cat', '-8' );
