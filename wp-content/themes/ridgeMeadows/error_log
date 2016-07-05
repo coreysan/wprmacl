@@ -2,3 +2,7 @@
 [30-Aug-2013 18:03:28 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/rmacl/public_html/rmacl/wp-content/themes/ridgeMeadows/index.php on line 16
 [06-Dec-2013 02:41:06 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/rmacl/public_html/rmacl/wp-content/themes/ridgeMeadows/index.php on line 16
 [20-Feb-2014 19:17:24 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/rmacl/public_html/rmacl/wp-content/themes/ridgeMeadows/index.php on line 16
+[27-Apr-2015 18:59:56 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/rmacl/public_html/rmacl/wp-content/themes/ridgeMeadows/index.php on line 16
+[15-May-2015 17:51:41 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/rmacl/public_html/rmacl/wp-content/themes/ridgeMeadows/index.php on line 16
+[19-Jul-2015 14:31:35 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/rmacl/public_html/rmacl/wp-content/themes/ridgeMeadows/404.php on line 10
+[07-Nov-2015 06:46:17 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/rmacl/public_html/rmacl/wp-content/themes/ridgeMeadows/404.php on line 10
