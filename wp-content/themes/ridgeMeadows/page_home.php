@@ -58,11 +58,11 @@ Javascript must be enabled for the correct page display
     <div class="header-right"> 
       <!--Top Links-->
       <?php wp_nav_menu(array('theme_location'=>'primary', 'menu_class' => 'top-links', 'menu'=>'top', 'link_before'=>'', 'link_after'=>'', 'depth'=>1)); ?>
-      <div id="kmuniti_home_btn_holder">
-      	<?php echo getKmunitiButton();?>
+      <div id="top-right-ad-btn">
+      	<a href="http://rmacl.org/run-walkn-roll-rmacls-3rd-annual/"></a>
       </div>
       <div class="slogan">building futures, changing lives</div> 
-      </div><!-- header-right -->
+    </div><!-- header-right -->
     <!--Nav-->
     <nav id="nav"> 
       <?php wp_nav_menu(array('theme_location'=>'primary', 'menu_class' => '', 'menu'=>'main', 'link_before'=>'', 'link_after'=>'', 'depth'=>1)); ?>
@@ -78,6 +78,22 @@ Javascript must be enabled for the correct page display
 </div>
 <div class="grid_4 toprow newswrapper">
   <h1 class="newsroll"><span>What's New at RMACL</span></h1>
+  
+  <?php /*
+  <!-- homeshare edits -->
+  <div class="post-fp">
+    <div class="thumbnail">
+      <a href="<?php echo home_url(); ?>/adult-services/residential-services/">
+      <img height="64" width="64" src="http://rmacl.org/rmacl/wp-content/uploads/Happy-House1.jpg" />
+      </a>
+    </div>
+    <div class="excerpt">
+      <h1><a href="<?php echo home_url(); ?>/adult-services/residential-services/">Home Sharing</a></h1>
+      <a href="<?php echo home_url(); ?>/adult-services/residential-services/">A rewarding experience for everyone</a>
+    </div>
+  </div>
+  <?php /**/ ?>
+  
   <?php query_posts( array ( 'category_name' => 'front-page-news', 'posts_per_page' => 3, 'order' => 'ASC' ) );
 global $more;
 $more = 0;
@@ -96,8 +112,12 @@ while (have_posts()) : the_post();?>
     </div>
   </div>
   <?php endwhile;?>
-  <div class="newsbuttons"><a href="<?php echo get_permalink(22); ?>" title="<?php echo get_the_title(22); ?>" class="button">More News</a><a href="<?php echo get_permalink(970); ?>" title="<?php echo get_the_title(970); ?>" class="button">Our Surveys</a>
-  </div>
+  <?php ?>
+  	<div class="newsbuttons">
+  		<a href="<?php echo get_permalink(22); ?>" title="<?php echo get_the_title(22); ?>" class="button">More News</a>
+  		<a href="<?php echo get_permalink(970); ?>" title="<?php echo get_the_title(970); ?>" class="button">Our Surveys</a>
+	</div>
+    <?php /**/?>
   </div>
 <div class="clear"></div>
 <div class="grid_8 ">
@@ -137,27 +157,48 @@ while (have_posts()) : the_post();?>
 <!-- end .grid_8.push_8 -->
 <div class="grid_4">
  
+  <div class="grid_4 smallrow rightside home-sharing">
+    <div class="heading-fp wide ">
+      <h3>
+      	<a 	href="/adult-services/residential-services/" 
+      		title="<?php echo get_the_title(67); ?>">
+      		interested in becoming a<br>
+			<b>home sharing provider?</b>
+		</a>
+	  </h3>
+    </div>
+      <div class="img-frame">
+      	<a href="<?php echo get_permalink(67); ?>" title="<?php echo get_the_title(67); ?>">
+      		<img src="<?php bloginfo( 'template_directory' ); ?>/images/home-sharing.jpg" alt="<?php echo get_the_title(67); ?>"
+      				width="320">
+      	</a>
+      </div>
+  </div>
+  
   <div class="grid_4 smallrow rightside">
     <div class="heading-fp wide">
-      <h3><a href="<?php echo get_permalink(67); ?>" title="<?php echo get_the_title(67); ?>">read about our<br/>
-        <b>support for families</b></a></h3></div>
+		<h3><a href="<?php echo get_permalink(67); ?>" title="<?php echo get_the_title(67); ?>">read about our<br/>
+        <b>support for families</b></a></h3>
+	</div>
       <div class="img-frame"><a href="<?php echo get_permalink(67); ?>" title="<?php echo get_the_title(67); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/images/familysupport.jpg" alt="<?php echo get_the_title(67); ?>"></a></div>
   </div>
-
+  
+  <?php /* ?>
   <!-- end .grid_1.omega -->
   <div class="clear"></div>
   <div class="grid_4 smallrow rightside">
-    <div class="recruiting-fp">
+    <div class="recruiting-fp shittened">
       <h3><a style="font-size: inherit;"
-			href="http://rmacl.org/contact-us/ways-to-donate/kmuniti-market/">
-			Shop at the<br>
-			<b>Kmuniti Market</b><br>
-			to support RMACL
+			href="http://rmacl.org/adult-services/residential-services/">
+			Interested in becoming a<br>
+			<b>Home Sharing Provider?</b><br>
+			Visit our information<br>pages today...
 			<!-- Vicuna's 3-day art extravagonza<br>
 			<b>Spring into Summer</b><br>
 			Thursday-Saturday<br> June 12<sup>th</sup> - 14<sup>th</sup> -->
 		</a></h3></div>
   </div>
+  <?php /**/ ?>
 </div>
 <!-- end .grid_4.pull_4 -->
 

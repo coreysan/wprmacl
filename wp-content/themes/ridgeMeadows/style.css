@@ -200,6 +200,29 @@ a:hover {
 a:active {
   color: #36a1e6;
 }
+.home-sharing.smallrow{
+	height: auto;
+    margin-bottom: 21px;
+}
+
+.home-sharing .img-frame
+{
+	height: 142px;
+    overflow: hidden;
+    /*border: 1px solid white;*/
+    box-sizing: border-box;
+    width: 320px;
+}
+
+.home-sharing .img-frame img
+{
+    margin-top: -20px;
+}
+.newswrapper .home-sharing img{
+    box-sizing: border-box;
+    width: 320px;
+    border: 0;
+}
 #slider,
 #banner img,
 #content img,
@@ -405,31 +428,29 @@ body.home .container_12 {
   display: block;
 }
 
-div#kmuniti_home_btn_holder
+div#top-right-ad-btn
 {
 
-	margin: 0px 0 5px;
+	margin: 0px 0 10px;
+	display: block;
 	height: 57px;
 		
 }
 
 /* Kmuniti button btn */
-a#rmacl_kmuniti_btn{
+div#top-right-ad-btn > a{
 	
-	display: inline-block;
+	width: 200px;
+	height: 50px;
+	display: block;
 	float: right;
-	
-	padding-top: 2px;
-	padding-right: 118px;
-	
-	text-align: right;
-	text-decoration: none;
-	color: white;
-	padding-bottom: 3px;
-	/*border-bottom: 1px solid white;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.7);*/
-	background: url('images/k_gt_1.png') no-repeat right top;
+	padding: 3px;
+	margin: 3px;
+	background: url('images/save-the-date-rwr.png') no-repeat right top;
 
+}
+div#top-right-ad-btn > a:hover{
+	border-right: 2px solid white;	
 }
   
 a#rmacl_kmuniti_btn:hover{
@@ -804,29 +825,8 @@ body.page-id-9 #banner, body.parent-pageid-9 #banner{
   box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.3);
   padding: 22px 0 24px 18px;
 }
-aside h3 a,
-.heading-fp h3 a,
-.services-fp h3 a,
-.recruiting-fp a {
-  color: #fff !important;
-  text-decoration: none;
-}
-aside h3 a:hover,
-.heading-fp h3 a:hover,
-.services-fp h3 a:hover,
-.recruiting-fp a:hover {
-  text-decoration: underline;
-}
-.services-fp h3 a,
-.recruiting-fp h3 a {
-  font-size: 1.2em;
-  text-align: center;
-}
-.services-fp h3 a b,
-.recruiting-fp a b {
-  font-size: 1.3em;
-  font-weight: bold;
-}
+
+
 .aside .img-frame {
   overflow: hidden;
   padding: 0 0 0 2px;
@@ -958,6 +958,25 @@ body.parent-pageid-10 h1.post-heading a {
   font-size: 1.143em;
   line-height: 1.125em;
 }
+
+.general-block ul ul
+{
+	width: 100%;
+	color: white;
+    padding: 0;
+    box-shadow: none;
+}
+.general-block ul ul li,
+.general-block ul ul li:first-child
+{
+	font-size: 15px;
+	padding: 5px;
+}
+.general-block ul ul li a
+{
+	color: #eee;
+	font-size: 15px;
+}
 .business-block ul li,
 .general-block ul li {
   float: left;
@@ -1072,6 +1091,41 @@ ul.xoxo li ul li a.current {
 .heading-fp.wide {
   width: 320px !important;
 }
+aside h3 a,
+.heading-fp h3 a,
+.services-fp h3 a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+
+.recruiting-fp a{
+  text-decoration: none;
+}
+aside h3 a:hover,
+.heading-fp h3 a:hover,
+.services-fp h3 a:hover,
+.recruiting-fp a:hover {
+  text-decoration: underline;
+}
+.services-fp h3 a,
+.recruiting-fp h3 a {
+  font-size: 1.2em;
+  text-align: center;
+}
+.services-fp h3 a b,
+.recruiting-fp a b {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.recruiting-fp.shittened h3 a {
+  font-size: 0.8em;
+}
+.recruiting-fp.shittened h3 a b {
+  font-size: 1.2em;
+}
+
+
 .services-fp,
 .recruiting-fp {
   height: 220px;
@@ -1084,6 +1138,19 @@ ul.xoxo li ul li a.current {
   line-height: 1.25em;
   font-weight: normal;
 }
+.recruiting-fp.shittened {
+    background: rgb(255, 246, 55);
+    border: 4px solid purple;
+    
+    box-sizing: border-box;
+    border-radius: 15px;
+    text-align: center;
+}
+.recruiting-fp.shittened h3 a{
+    color: purple;
+    font-size: 1.2em;
+}
+
 .services-box .heading,
 .heading-fp,
 .services-fp {
@@ -1570,17 +1637,18 @@ a.fp_children {
   color: #955C09;
 }
 .toprow h1.newsroll {
-  margin: 13px 0 20px 0;
+  margin: 32px 0 20px 0;
   color: #955C09;
-  height: 60px;
-  line-height: 60px;
+  text-align: center;
+  /*height: 60px;*/
+  line-height: 30px;
 }
 .post-fp {
   position: relative;
   background: #FEF9FC;
   letter-spacing: -1px;
   line-height: 20px;
-  margin-bottom: 6px;
+  margin-bottom: 16px;
   height: 80px;
   overflow: hidden;
   border: 1px solid #F2ECEF;
@@ -1592,7 +1660,6 @@ a.fp_children {
   behavior: url(PIE.htc);
 }
 .post-fp:hover {
-  margin-top: 2px;
   -webkit-box-shadow: 0 -1px 6px 0 rgba(128, 130, 132, 0.75);
   box-shadow: 0 -1px 6px 0 rgba(128, 130, 132, 0.75);
 }
@@ -1643,13 +1710,18 @@ a.fp_children {
   font-style: italic;
   letter-spacing: -1px;
   line-height: 40px;
-  width: 50%;
+  width: 49%;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
   white-space: nowrap;
   display: inline-block;
 }
+
+.rightside.home-sharing{
+	width: 320px;
+}
+
 .toprow .button:hover {
   background: #4cabe8;
   text-decoration: underline;
@@ -1739,7 +1811,7 @@ img.alignleft {
 }
 .newsbuttons {
   position: absolute;
-  bottom: 3px;
+  bottom: 0px;
   line-height: 40px;
   width: 100%;
 }

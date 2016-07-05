@@ -56,16 +56,14 @@
 				<img src="<?php bloginfo( 'template_directory' ); ?>/images/logo.png" title="<?php wp_title(); ?>" data-retina="<?php echo get_template_directory_uri(); ?>/images/logo_retina.png" width="286" height="104">
 				<span>Ridge Meadows Association for Community Living</span>
 			</a></h1>
-			<div class="header-right">
-				<!--Top Links-->
-				<?php wp_nav_menu(array('theme_location'=>'primary', 'menu_class' => 'top-links', 'menu'=>'top', 'link_before'=>'', 'link_after'=>'', 'depth'=>1)); ?>
-			
-				<div id="kmuniti_home_btn_holder">
-		      		<?php echo getKmunitiButton();?>
-		      	</div>
-			
-				<div class="slogan">building futures, changing lives</div>
-			</div>
+			<div class="header-right"> 
+		      <!--Top Links-->
+		      <?php wp_nav_menu(array('theme_location'=>'primary', 'menu_class' => 'top-links', 'menu'=>'top', 'link_before'=>'', 'link_after'=>'', 'depth'=>1)); ?>
+		      <div id="top-right-ad-btn">
+		      	<a href="http://rmacl.org/run-walkn-roll-rmacls-3rd-annual/"></a>
+		      </div>
+		      <div class="slogan">building futures, changing lives</div> 
+		    </div><!-- header-right -->
 			<!--Nav-->
 			<nav id="nav">
 				<?php wp_nav_menu(array('theme_location'=>'primary', 'menu_class' => '', 'menu'=>'main', 'link_before'=>'', 'link_after'=>'', 'depth'=>1)); ?>
